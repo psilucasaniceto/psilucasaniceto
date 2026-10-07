@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucas Francisco Aniceto Pereira | Psicólogo em Hortolândia e Online</title>
+  <meta name="description" content="Psicoterapia para adultos com Lucas Francisco Aniceto Pereira, psicólogo CRP 06/178281. Abordagem Centrada na Pessoa. Atendimento presencial em Hortolândia e online.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#315C5A">
+  <meta property="og:title" content="Lucas Francisco Aniceto Pereira | Psicólogo">
+  <meta property="og:description" content="Psicoterapia para adultos, presencial em Hortolândia e online. Abordagem Centrada na Pessoa.">
+  <style>
+    :root{
+      /* Paleta provisória. Substituir pelos códigos exatos do logotipo quando o PDF for disponibilizado. */
+      --primary:#315C5A;
+      --primary-dark:#234644;
+      --accent:#C79A67;
+      --cream:#F6F2EA;
+      --surface:#FFFFFF;
+      --ink:#263331;
+      --muted:#687571;
+      --line:#DDE5E1;
+      --radius:22px;
+      --shadow:0 18px 55px rgba(35,70,68,.10);
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--ink);
+      background:var(--surface);
+      line-height:1.65;
+    }
+    a{color:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(calc(100% - 40px),var(--max));margin:auto}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:.82rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase;
+      color:var(--primary);
+    }
+    .eyebrow::before{content:"";width:26px;height:1px;background:var(--accent)}
+    h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.13;letter-spacing:-.025em;margin:0}
+    h1{font-size:clamp(2.45rem,6vw,5.15rem);max-width:780px}
+    h2{font-size:clamp(2rem,4vw,3.25rem)}
+    h3{font-size:1.35rem}
+    p{margin:0 0 1rem}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:650px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      min-height:52px;padding:0 23px;border-radius:999px;
+      text-decoration:none;font-weight:800;border:1px solid transparent;
+      transition:.2s ease;cursor:pointer
+    }
+    .btn-primary{background:var(--primary);color:#fff;box-shadow:0 10px 24px rgba(49,92,90,.22)}
+    .btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px)}
+    .btn-ghost{border-color:var(--line);background:#fff;color:var(--primary)}
+    .btn-ghost:hover{border-color:var(--primary)}
+    .site-header{
+      position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);
+      backdrop-filter:blur(14px);border-bottom:1px solid rgba(221,229,225,.8)
+    }
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.15}
+    .brand strong{font-size:1rem;letter-spacing:-.01em}
+    .brand span{font-size:.72rem;color:var(--muted);margin-top:4px}
+    .nav-links{display:flex;gap:24px;align-items:center;font-size:.9rem;font-weight:650}
+    .nav-links a{text-decoration:none;color:var(--muted)}
+    .nav-links a:hover{color:var(--primary)}
+    .hero{background:linear-gradient(135deg,var(--cream) 0%,#fff 58%);padding:78px 0 82px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+    .hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:22px}
+    .hero h1 em{color:var(--primary);font-style:normal}
+    .trust-row{display:flex;flex-wrap:wrap;gap:10px 18px;color:var(--muted);font-size:.86rem}
+    .trust-row span{display:inline-flex;align-items:center;gap:7px}
+    .trust-row span::before{content:"✓";font-weight:900;color:var(--accent)}
+    .visual{
+      min-height:510px;border-radius:36px;background:
+      radial-gradient(circle at 28% 22%,rgba(199,154,103,.32),transparent 25%),
+      linear-gradient(155deg,#DCE9E4,#F8F4ED);
+      position:relative;display:grid;place-items:center;box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .visual::before,.visual::after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(49,92,90,.16)}
+    .visual::before{width:340px;height:340px}
+    .visual::after{width:220px;height:220px}
+    .visual-card{
+      position:relative;z-index:1;width:min(82%,360px);padding:32px;border-radius:28px;
+      background:rgba(255,255,255,.82);backdrop-filter:blur(8px);box-shadow:var(--shadow);
+      text-align:center
+    }
+    .visual-card .mark{
+      width:72px;height:72px;margin:0 auto 22px;border-radius:50%;
+      border:1px solid var(--accent);display:grid;place-items:center;color:var(--primary);
+      font-family:Georgia,serif;font-size:1.8rem
+    }
+    .visual-card strong{font-family:Georgia,serif;font-size:1.45rem;display:block}
+    .visual-card small{display:block;color:var(--muted);margin-top:8px}
+    section{padding:96px 0}
+    .section-head{max-width:760px;margin-bottom:44px}
+    .section-head .eyebrow{margin-bottom:17px}
+    .section-head p{margin-top:18px;color:var(--muted);font-size:1.06rem}
+    .problem{background:#fff}
+    .problem-grid,.benefit-grid,.faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:#fff}
+    .card .icon{
+      width:42px;height:42px;border-radius:12px;background:var(--cream);display:grid;place-items:center;
+      color:var(--primary);font-weight:900;margin-bottom:22px
+    }
+    .card p{color:var(--muted);font-size:.96rem;margin-top:10px}
+    .solution{background:var(--cream)}
+    .solution-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+    .quote{
+      border-left:3px solid var(--accent);padding-left:24px;font-family:Georgia,serif;font-size:1.55rem;line-height:1.35
+    }
+    .solution-list{display:grid;gap:16px}
+    .solution-item{display:grid;grid-template-columns:32px 1fr;gap:14px}
+    .solution-item b{color:var(--primary)}
+    .solution-item p{color:var(--muted);margin-top:4px}
+    .benefit-grid{grid-template-columns:repeat(2,1fr)}
+    .benefit-card{display:grid;grid-template-columns:46px 1fr;gap:18px;padding:24px;border-radius:18px;background:#fff;border:1px solid var(--line)}
+    .benefit-card .num{font-family:Georgia,serif;color:var(--accent);font-size:1.5rem}
+    .benefit-card p{color:var(--muted);margin-top:6px;font-size:.94rem}
+    .steps{background:var(--primary);color:#fff}
+    .steps .eyebrow{color:#D9E8E3}.steps .eyebrow::before{background:var(--accent)}
+    .steps .section-head p{color:#D5E1DE}
+    .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{padding:26px;border:1px solid rgba(255,255,255,.18);border-radius:20px;background:rgba(255,255,255,.06)}
+    .step-number{font-size:.8rem;font-weight:900;letter-spacing:.1em;color:#E2C29C}
+    .step h3{font-size:1.22rem;margin:12px 0 9px}
+    .step p{color:#D5E1DE;font-size:.92rem}
+    .differentials{background:#fff}
+    .compare{border:1px solid var(--line);border-radius:26px;overflow:hidden}
+    .compare-row{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line)}
+    .compare-row:last-child{border-bottom:0}
+    .compare-row>div{padding:21px 24px}
+    .compare-row .head{background:var(--cream);font-weight:800;color:var(--primary)}
+    .compare-row .alt{color:var(--muted)}
+    .social{background:#F8F9F7}
+    .social-note{border:1px dashed #B9C9C3;border-radius:22px;padding:34px;text-align:center;max-width:820px;margin:auto}
+    .social-note p{color:var(--muted)}
+    .offer{background:var(--cream)}
+    .offer-card{max-width:780px;margin:auto;background:#fff;border-radius:30px;padding:42px;box-shadow:var(--shadow);border:1px solid var(--line)}
+    .offer-card ul{list-style:none;padding:0;margin:25px 0;display:grid;gap:12px}
+    .offer-card li{display:flex;gap:10px}.offer-card li::before{content:"✓";color:var(--accent);font-weight:900}
+    .honorarios{padding:18px 20px;background:#F8F9F7;border-radius:16px;color:var(--muted);font-size:.9rem}
+    .objections{background:#fff}
+    details{border-bottom:1px solid var(--line);padding:20px 0}
+    summary{cursor:pointer;font-weight:800;list-style:none;display:flex;justify-content:space-between;gap:20px}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";color:var(--primary);font-size:1.3rem}
+    details[open] summary::after{content:"−"}
+    details p{color:var(--muted);margin:12px 0 0;max-width:850px}
+    .faq{background:var(--cream)}
+    .faq-grid{grid-template-columns:1fr 1fr}
+    .faq details{border-bottom:0;background:#fff;border:1px solid var(--line);padding:22px 24px;border-radius:16px}
+    .final-cta{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center;padding:100px 0}
+    .final-cta h2{max-width:760px;margin:0 auto 18px}
+    .final-cta p{max-width:650px;margin:0 auto 28px;color:#DDE8E5}
+    .final-cta .btn{background:#fff;color:var(--primary)}
+    footer{padding:34px 0 100px;background:#1F3534;color:#D8E1DF}
+    .footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}
+    footer strong{color:#fff}
+    footer small{display:block;color:#AEBEBA;margin-top:8px}
+    .mobile-cta{display:none}
+    @media(max-width:900px){
+      .nav-links{display:none}
+      .hero{padding:55px 0 60px}
+      .hero-grid,.solution-grid{grid-template-columns:1fr;gap:38px}
+      .visual{min-height:390px}
+      .problem-grid,.steps-grid{grid-template-columns:1fr 1fr}
+      .benefit-grid,.faq-grid{grid-template-columns:1fr}
+      section{padding:72px 0}
+    }
+    @media(max-width:620px){
+      .container{width:min(calc(100% - 28px),var(--max))}
+      h1{font-size:2.55rem}
+      h2{font-size:2.05rem}
+      .hero-copy{gap:17px}
+      .hero .btn{width:100%}
+      .visual{min-height:330px;border-radius:25px}
+      .problem-grid,.steps-grid{grid-template-columns:1fr}
+      .card{padding:23px}
+      .offer-card{padding:28px 22px}
+      .compare-row>div{padding:16px 14px;font-size:.9rem}
+      .footer-grid{flex-direction:column}
+      .mobile-cta{
+        display:block;position:fixed;z-index:30;bottom:0;left:0;right:0;padding:10px 14px;
+        background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid var(--line)
+      }
+      .mobile-cta .btn{width:100%;min-height:50px}
+      footer{padding-bottom:90px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Página inicial">
+        <strong>Lucas Francisco Aniceto Pereira</strong>
+        <span>Psicólogo · CRP 06/178281</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#abordagem">Abordagem</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a class="btn btn-primary" href="https://wa.me/55[DDD][NUMERO]" target="_blank" rel="noopener">Entre em contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Psicoterapia para adultos</span>
+          <h1>Um espaço para compreender o que você vive e <em>encontrar novos caminhos.</em></h1>
+          <p class="lead">Acompanhamento psicológico na Abordagem Centrada na Pessoa, com atendimento presencial em Hortolândia e modalidade online.</p>
+          <a class="btn btn-primary" href="https://wa.me/55[DDD][NUMERO]" target="_blank" rel="noopener">Quero conversar sobre meu atendimento <span aria-hidden="true">→</span></a>
+          <div class="trust-row" aria-label="Informações rápidas">
+            <span>Psicólogo CRP 06/178281</span>
+            <span>Atendimento para maiores de 18 anos</span>
+          </div>
+        </div>
+        <div class="visual" aria-label="Área reservada para fotografia ou logotipo">
+          <div class="visual-card">
+            <div class="mark" aria-hidden="true">LF</div>
+            <strong>Psicoterapia com escuta e presença</strong>
+            <small>Abordagem Centrada na Pessoa</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem" id="abordagem">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Talvez você esteja vivendo algo assim</span>
+          <h2>Quando aquilo que você sente começa a ocupar espaço demais.</h2>
+          <p>Há momentos em que compreender sozinho o que está acontecendo parece difícil. A psicoterapia pode oferecer um espaço de escuta e reflexão para olhar para essa experiência com mais cuidado.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="card">
+            <div class="icon">01</div>
+            <h3>Ansiedade e preocupação</h3>
+            <p>Pensamentos que se repetem, sensação de sobrecarga ou dificuldade de desacelerar e estar no presente.</p>
+          </article>
+          <article class="card">
+            <div class="icon">02</div>
+            <h3>Tristeza e desânimo</h3>
+            <p>Períodos de sofrimento emocional, perda de interesse ou dificuldade para lidar com aquilo que mudou.</p>
+          </article>
+          <article class="card">
+            <div class="icon">03</div>
+            <h3>Relacionamentos</h3>
+            <p>Conflitos, limites, comunicação e sentimentos que podem estar difíceis de compreender ou expressar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution">
+      <div class="container solution-grid">
+        <div>
+          <span class="eyebrow">A proposta</span>
+          <h2>Você não precisa chegar com tudo organizado para começar.</h2>
+          <p class="quote">A terapia pode ser um lugar para colocar em palavras o que, muitas vezes, ainda está difícil de nomear.</p>
+        </div>
+        <div class="solution-list">
+          <div class="solution-item">
+            <b>01</b>
+            <div><strong>Escuta individualizada</strong><p>O processo parte da sua experiência, daquilo que você traz e do sentido que isso assume na sua vida.</p></div>
+          </div>
+          <div class="solution-item">
+            <b>02</b>
+            <div><strong>Abordagem Centrada na Pessoa</strong><p>Uma perspectiva humanista que valoriza a pessoa em sua singularidade e a construção de um espaço terapêutico de acolhimento e respeito.</p></div>
+          </div>
+          <div class="solution-item">
+            <b>03</b>
+            <div><strong>Processo construído em conjunto</strong><p>A psicoterapia não é uma fórmula pronta. O acompanhamento é construído considerando sua demanda e seu momento de vida.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">O que a terapia pode favorecer</span>
+          <h2>Mais espaço para compreender, escolher e se posicionar.</h2>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card"><div class="num">01</div><div><h3>Autoconhecimento</h3><p>Reconhecer sentimentos, necessidades, valores e formas de se relacionar consigo e com o mundo.</p></div></article>
+          <article class="benefit-card"><div class="num">02</div><div><h3>Clareza sobre o momento atual</h3><p>Organizar experiências e refletir sobre situações que hoje parecem confusas ou difíceis de elaborar.</p></div></article>
+          <article class="benefit-card"><div class="num">03</div><div><h3>Expressão emocional</h3><p>Encontrar um espaço seguro para falar sobre experiências que nem sempre encontram lugar no cotidiano.</p></div></article>
+          <article class="benefit-card"><div class="num">04</div><div><h3>Relações mais conscientes</h3><p>Refletir sobre limites, escolhas, comunicação e padrões presentes nos relacionamentos.</p></div></article>
+          <article class="benefit-card"><div class="num">05</div><div><h3>Maior contato consigo</h3><p>Perceber com mais atenção o que você sente e como suas experiências influenciam suas escolhas.</p></div></article>
+          <article class="benefit-card"><div class="num">06</div><div><h3>Novas possibilidades</h3><p>Ampliar a compreensão sobre si pode abrir espaço para maneiras diferentes de lidar com situações da vida.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps" id="como-funciona">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Como funciona</span>
+          <h2>Um processo simples para dar o primeiro passo.</h2>
+          <p>O início não precisa ser complicado. O primeiro contato serve para conversarmos sobre sua busca e os próximos passos.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step"><span class="step-number">01</span><h3>Entre em contato</h3><p>Envie uma mensagem pelo canal de atendimento para apresentar brevemente sua demanda.</p></article>
+          <article class="step"><span class="step-number">02</span><h3>Conheça o atendimento</h3><p>Conversaremos sobre a modalidade, disponibilidade e informações importantes para o início.</p></article>
+          <article class="step"><span class="step-number">03</span><h3>Primeiro encontro</h3><p>O espaço inicial permite conhecer sua demanda e começar a construir o vínculo terapêutico.</p></article>
+          <article class="step"><span class="step-number">04</span><h3>Construção do processo</h3><p>A continuidade é definida a partir das necessidades e do percurso construído ao longo do acompanhamento.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="differentials">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Diferencial</span>
+          <h2>Uma relação terapêutica que respeita o seu tempo e a sua singularidade.</h2>
+          <p>Em vez de apresentar uma fórmula universal, a proposta é construir o processo a partir da pessoa e de sua experiência.</p>
+        </div>
+        <div class="compare" role="table" aria-label="Comparação de abordagem">
+          <div class="compare-row" role="row"><div class="head">Este acompanhamento</div><div class="head">Fórmula pronta</div></div>
+          <div class="compare-row" role="row"><div>Parte da experiência singular de cada pessoa.</div><div class="alt">Parte de uma solução padronizada para todos.</div></div>
+          <div class="compare-row" role="row"><div>Valoriza escuta, presença e construção conjunta.</div><div class="alt">Pode priorizar respostas rápidas e generalizadas.</div></div>
+          <div class="compare-row" role="row"><div>Considera o momento de vida e a demanda apresentada.</div><div class="alt">Pode tratar demandas diferentes de maneira semelhante.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Confiança</span>
+          <h2>Credibilidade sem expor quem está em atendimento.</h2>
+        </div>
+        <div class="social-note">
+          <p><strong>Não foram inseridos depoimentos, números de pacientes ou resultados fictícios.</strong></p>
+          <p>Esta área poderá receber futuramente conteúdos reais, quando houver fundamento e observância das normas éticas aplicáveis à publicidade profissional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="container">
+        <div class="offer-card">
+          <span class="eyebrow">O atendimento</span>
+          <h2>Psicoterapia individual para adultos</h2>
+          <p class="lead">Atendimento presencial em Hortolândia e online, conforme disponibilidade e condições do serviço.</p>
+          <ul>
+            <li>Sessões individuais de psicoterapia</li>
+            <li>Abordagem Centrada na Pessoa</li>
+            <li>Atendimento para pessoas a partir de 18 anos</li>
+            <li>Modalidade presencial ou online</li>
+          </ul>
+          <div class="honorarios">
+            <strong>Sobre os honorários</strong><br>
+            Para respeitar as diretrizes éticas da publicidade profissional em Psicologia, os valores não são utilizados como elemento de propaganda nesta página. As informações sobre honorários são apresentadas individualmente antes do início do acompanhamento.
+          </div>
+          <br>
+          <a class="btn btn-primary" href="https://wa.me/55[DDD][NUMERO]" target="_blank" rel="noopener">Entre em contato para agendar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="objections">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Antes de começar</span>
+          <h2>Talvez você esteja se perguntando...</h2>
+        </div>
+        <details><summary>Será que a terapia é para mim?</summary><p>A psicoterapia pode ser procurada por diferentes motivos. O primeiro contato é uma oportunidade para apresentar o que está acontecendo e compreender se essa proposta de acompanhamento faz sentido para você.</p></details>
+        <details><summary>Preciso saber exatamente o que tenho ou o que devo falar?</summary><p>Não. Você pode começar pelo que estiver mais presente no momento. A construção da compreensão acontece ao longo do processo.</p></details>
+        <details><summary>Vou receber respostas prontas para resolver meus problemas?</summary><p>A proposta não é oferecer fórmulas ou respostas prontas. O trabalho busca favorecer reflexão, compreensão e contato com sua própria experiência.</p></details>
+        <details><summary>Quanto tempo dura a psicoterapia?</summary><p>Não existe uma duração única aplicável a todas as pessoas. A continuidade é pensada de acordo com a demanda, o processo e as necessidades apresentadas.</p></details>
+        <details><summary>E se eu tiver dificuldade para falar sobre o que sinto?</summary><p>Isso também pode fazer parte do processo. Você não precisa chegar sabendo explicar tudo. O espaço pode ser construído gradualmente.</p></details>
+      </div>
+    </section>
+
+    <section class="faq" id="duvidas">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Dúvidas frequentes</h2>
+        </div>
+        <div class="faq-grid">
+          <details><summary>Qual abordagem é utilizada?</summary><p>A Abordagem Centrada na Pessoa, uma perspectiva humanista da Psicologia.</p></details>
+          <details><summary>Quem pode procurar o atendimento?</summary><p>Adultos a partir de 18 anos que estejam buscando acompanhamento psicológico.</p></details>
+          <details><summary>Onde acontecem os atendimentos?</summary><p>Presencialmente em Hortolândia e também na modalidade online.</p></details>
+          <details><summary>O atendimento online está disponível para todo o Brasil?</summary><p>A proposta contempla atendimento online, conforme as condições profissionais e regulamentares aplicáveis à modalidade.</p></details>
+          <details><summary>Como saber se é o momento de procurar terapia?</summary><p>Não é necessário esperar uma situação chegar ao limite. Se algo vem causando sofrimento, confusão ou dificuldade para lidar com a vida cotidiana, conversar com um psicólogo pode ser um primeiro passo.</p></details>
+          <details><summary>Como faço para saber os honorários?</summary><p>As informações são fornecidas diretamente no contato inicial, antes do início do acompanhamento.</p></details>
+          <details><summary>Existe garantia de resultado?</summary><p>Não. A Psicologia não deve fazer promessas taxativas de resultados. O processo é individual e construído de acordo com cada pessoa.</p></details>
+          <details><summary>Como agendo uma conversa?</summary><p>Use um dos botões de contato desta página. O link está preparado para integração com WhatsApp.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <h2>Talvez o primeiro passo seja simplesmente começar a falar sobre o que está acontecendo.</h2>
+        <p>Entre em contato para conhecer o atendimento e verificar as possibilidades de acompanhamento.</p>
+        <a class="btn" href="https://wa.me/55[DDD][NUMERO]" target="_blank" rel="noopener">Quero conversar sobre uma sessão →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Lucas Francisco Aniceto Pereira</strong>
+        <small>Psicólogo · CRP 06/178281</small>
+        <small>Abordagem Centrada na Pessoa</small>
+      </div>
+      <div>
+        <small>Atendimento presencial em Hortolândia · Online</small>
+        <small>© 2026 Lucas Francisco Aniceto Pereira</small>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <a class="btn btn-primary" href="https://wa.me/55[DDD][NUMERO]" target="_blank" rel="noopener">Entre em contato para agendar</a>
+  </div>
+</body>
+</html>
